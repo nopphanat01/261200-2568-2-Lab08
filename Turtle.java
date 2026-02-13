@@ -113,9 +113,9 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
 
         
         for(int i=0; i<8; i++) {
-            boss.forward(140);   // แฉกยาว
+            boss.forward(140);   
             boss.right(45);
-            boss.forward(60);    // ช่วงเว้า
+            boss.forward(60);    
             boss.right(45);
         }
 
