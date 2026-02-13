@@ -44,8 +44,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         Turtle bob = new Turtle();
         Turtle best = new Turtle();
         Turtle boss = new Turtle();
-
-        // ===== ความเร็วเท่ากัน =====
+        
         bob.speed(4);
         best.speed(4);
         boss.speed(4);
@@ -53,34 +52,26 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         bob.width(5);
         best.width(5);
         boss.width(5);
-
-        // ===== สี bob =====
+        
         bob.penColor("black");
 
-
-        // ===== ย้าย best ลงล่าง =====
+        
         best.penColor("white");
         best.right(90);
         best.forward(260);
         best.left(90);
         best.penColor("red");
 
-
-        // ===== ย้าย boss ไปขวา =====
+        
         boss.penColor("white");
         boss.right(90);
         boss.forward(260);
         boss.left(90);
         boss.forward(220);
         boss.penColor("green");
-
-
-        // ==============================
-        // bob + best
-        // ==============================
+        
         for(int i=0; i<6; i++) {
-
-            // snowflake
+            
             bob.forward(60);
             bob.right(60); bob.forward(40);
             bob.backward(40); bob.left(60);
@@ -107,8 +98,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
             bob.backward(180);
             bob.right(60);
 
-
-            // best ดาวแดง
+            
             best.forward(80);
             best.right(120);
             best.forward(80);
@@ -121,10 +111,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
             best.right(120);
         }
 
-
-        // ==============================
-        // boss ดาว 8 แฉกตามรูป
-        // ==============================
+        
         for(int i=0; i<8; i++) {
             boss.forward(140);   // แฉกยาว
             boss.right(45);
